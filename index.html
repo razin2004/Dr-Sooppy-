@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Sooppy – Appointment Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dr. Sooppy – Book Your Appointment</h1>
+
+    <div class="info">
+      <h2>Clinic Timings</h2>
+      <div class="clinic">
+        <h3>Koothali</h3>
+        <p>Sunday: 08:00 AM – 09:30 AM</p>
+        <p>Mon–Sat: 09:45 AM – 01:00 PM</p>
+        <p>Tuesday: <strong>Not Working</strong></p>
+      </div>
+      <div class="clinic">
+        <h3>Koorachundu</h3>
+        <p>Sunday: 11:00 AM – 01:00 PM</p>
+        <p>Mon–Sat: 04:45 PM – 07:00 PM</p>
+        <p>Tuesday: <strong>Not Working</strong></p>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Book Appointment</h2>
+      <form action="https://docs.google.com/forms/d/e/your-form-id/formResponse" method="POST" target="_blank">
+        <label for="name">Full Name:</label>
+        <input type="text" name="entry.YOUR_NAME_ENTRY_ID" id="name" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="entry.YOUR_PHONE_ENTRY_ID" id="phone" required pattern="[0-9]{10}" />
+
+        <label for="clinic">Clinic:</label>
+        <select name="entry.YOUR_CLINIC_ENTRY_ID" id="clinic" required>
+          <option value="">Select</option>
+          <option value="Koothali">Koothali</option>
+          <option value="Koorachundu">Koorachundu</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" name="entry.YOUR_DATE_ENTRY_ID" id="date" required />
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" name="entry.YOUR_TIME_ENTRY_ID" id="time" required />
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </div>
+
+    <div class="contact">
+      <p>For queries, call: <strong>8589821725</strong></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
